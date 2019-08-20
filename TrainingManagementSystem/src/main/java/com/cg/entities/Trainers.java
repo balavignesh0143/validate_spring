@@ -4,21 +4,26 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "trainee")
+@Table(name = "trainee1")
 public class Trainers {
 	@Id
-	@NotNull(message="ID Not Null")
+	//@NotNull(message="ID Not Null")
 	private int id;
-	@NotNull(message="Name Not Null, Min Length 3  and  Max Length 20")
-	@Size(min=3,max=20)
+	@NotNull(message="Name Not Null")
+	//@Size(min=3,max=20)
+	//@Min(value=3)
+	//@Max(value=20)
 	private String name;
-	@Max(value=50000,message="FEES Max Value should not exceed 50,000/-")
+	//@Max(value=50000,message="FEES Max Value should not exceed 50,000/-")
 	private int fees;
-	@Size(min=2,max=3,message="DURATION numbers of hours should be 2 to 3 digits")
+//	@Size(min=2,max=3,message="DURATION numbers of hours should be 2 to 3 digits")
+	//@Min(value=10,message="DURATION numbers of hours should be 2 to 3 digits")
+	//@Max(value=999,message="DURATION numbers of hours should be 2 to 3 digits")
 	private int duration;
 
 	public int getId() {

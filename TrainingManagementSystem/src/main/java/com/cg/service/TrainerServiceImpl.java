@@ -4,12 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import com.cg.dao.ITrainerDao;
 import com.cg.entities.Trainers;
 
-@Repository
+@Service
 public class TrainerServiceImpl implements ITrainer{
 
 	@Autowired
@@ -26,9 +26,9 @@ public class TrainerServiceImpl implements ITrainer{
 	}
 
 	@Override
-	public List<Trainers> addTrainers(Trainers tran) {
-		dao.save(tran);
-		return dao.findAll();
+	public Trainers addTrainers(Trainers tran) {
+		
+		return dao.save(tran);
 	}
 
 	@Override

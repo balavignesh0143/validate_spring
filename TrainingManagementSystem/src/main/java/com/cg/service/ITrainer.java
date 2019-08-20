@@ -10,7 +10,7 @@ public interface ITrainer {
 
 	Trainers findTrainersById(int id);
 
-	List<Trainers> addTrainers(Trainers tran);
+	Trainers addTrainers(Trainers tran);
 
 	List<Trainers> updateTrainers(int id, Trainers trans);
 

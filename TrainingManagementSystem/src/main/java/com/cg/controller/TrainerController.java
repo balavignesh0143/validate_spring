@@ -33,7 +33,7 @@ public class TrainerController {
 	}
 	
 	@PostMapping(value="/add")
-	public List<Trainers> addTrainee(@RequestBody Trainers tran)
+	public Trainers addTrainee(@RequestBody Trainers tran)
 	{
 		return trainee.addTrainers(tran);
 	}
