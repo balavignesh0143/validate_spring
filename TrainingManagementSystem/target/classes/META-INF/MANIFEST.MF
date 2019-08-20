@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: TrainingManagementSystem
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: balavp
+Implementation-Vendor-Id: com.cg
+Build-Jdk: 1.8.0_211
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/TrainingManagementSystem
+Created-By: Maven Integration for Eclipse
+
